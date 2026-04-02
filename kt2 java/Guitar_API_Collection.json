@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "name": "Guitar REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Create Guitar (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"brand\": \"Fender\",\n    \"model\": \"Stratocaster\",\n    \"stringsCount\": 6\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/guitars",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "guitars"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Get All Guitars (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/guitars",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "guitars"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Get Guitar by ID (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/guitars/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "guitars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4. Update Guitar (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"brand\": \"Gibson\",\n    \"model\": \"Les Paul Standard\",\n    \"stringsCount\": 6\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/guitars/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "guitars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5. Delete Guitar (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/guitars/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "guitars",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
